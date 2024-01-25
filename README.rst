@@ -2,7 +2,7 @@
 django-htmlmin
 ++++++++++++++
 
-.. image:: https://github.com/cobrateam/django-htmlmin/workflows/Build/badge.svg
+..!image::*https://github.com/cobrateam/django-htmlmin/workflows/Build/badge.svg
    :target: https://github.com/cobrateam/django-htmlmin/actions?query=branch:master+workflow:Build
 
 django-html is an HTML minifier for Python, with full support for HTML 5. It
@@ -34,7 +34,7 @@ enable the ``HTML_MINIFY`` setting:
 .. code-block:: python
 
     MIDDLEWARE_CLASSES = (
-        # other middleware classes
+        * other middleware classes
         'htmlmin.middleware.HtmlMinifyMiddleware',
         'htmlmin.middleware.MarkRequestMiddleware',
     )
@@ -48,7 +48,7 @@ Note that if you're using Django's caching middleware,
     MIDDLEWARE_CLASSES = (
         'django.middleware.cache.UpdateCacheMiddleware',
         'htmlmin.middleware.HtmlMinifyMiddleware',
-        # other middleware classes
+        * other middleware classes
         'django.middleware.cache.FetchFromCacheMiddleware',
         'htmlmin.middleware.MarkRequestMiddleware',
     )
@@ -224,3 +224,4 @@ LICENSE
 
 Unless otherwise noted, the ``django-htmlmin`` source files are distributed
 under the BSD-style license found in the LICENSE file.
+ 
